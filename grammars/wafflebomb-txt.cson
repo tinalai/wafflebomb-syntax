@@ -1,0 +1,9 @@
+'scopeName': 'source.wafflebomb'
+'name': 'wafflebomb',
+'fileTypes': ['txt']
+'patterns': [
+  {
+    'match': ''
+    'name': 
+  }
+]
