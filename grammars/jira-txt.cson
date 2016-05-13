@@ -1,0 +1,35 @@
+'scopeName': 'text.jira'
+'name': 'JIRA Summary'
+'fileTypes': ['txt', 'jira']
+'patterns': [
+  {
+    # comment: Unresolved
+    'match': '\\[*\\].+?\\*{2}$'
+    'name': 'keyword.unresolved.jira'
+  },
+  {
+    # comment: Resolved
+    'match': '\\[R\\].+?$'
+    'name': 'keyword.resolved.jira'
+  },
+  {
+    # comment: Important
+    'match': '\\[\\!\\].+?$'
+    'name': 'keyword.important.jira'
+  },
+  {
+    # comment: Question
+    'match': '\\[\\?\\].+?$'
+    'name': 'keyword.question.jira'
+  },
+  {
+    # comment: Note
+    'match': '\\[i\\].+?$'
+    'name': 'keyword.note.jira'
+  },
+  {
+    # comment: URL
+    'match': '(\\[a-z\\])://.+(/[a-zA-Z0-9\\-\\_\\.\\?\\&\\=\\+]+)'
+    'name': 'keyword.url.jira'
+  }
+]

@@ -305,3 +305,16 @@ atom-text-editor[mini] .scroll-view,
 :host([mini]) .scroll-view {
   padding-left: 1px;
 }
+
+ // jira summary 
+.text.jira {
+  &.keyword {
+    &.unresolved.jira{
+      color: @red;
+    }
+
+    &.resolved {
+      color: @blue;
+    }
+  }
+}
